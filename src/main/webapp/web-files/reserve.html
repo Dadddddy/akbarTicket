@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+    
+<!--بالا ی صفحه-->
+    <div class="container first-cont">
+    <div class="row" id="topbar">
+        <div class="col-md-6 col-xs-6" id="username">نام کاربر&nbsp;&nbsp;<i class="fa fa-user"></i></div>
+        <div class="col-md-6 col-xs-6">
+            <div id="title">
+                <div id="brand"><i class="fa fa-registered" id="r-icon"></i> اکبر تیکت&nbsp;</div>
+                <img src="../images/assets/LogoBlack.png" alt="logo"/>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <body>
+<!--کجاییم-->
+    <h1 id="path">جستجوی پرواز &gt; انتخاب پرواز &gt; <span id="curpos-white"> ورود اطلاعات &gt;</span> دریافت بلیط</h1>
+    
+    <div class="container">
+        <div id="all">
+            <div class="row" id="time-and-return">
+                <div class="col-md-6 col-xs-6" id="left">زمان باقیمانده:&emsp;<span id="time">۰۴:۵۹</span></div>
+                <div class="col-md-6 col-xs-6" id="right"><i class="fa fa-arrow-right"></i>&emsp;برگشت به صفحه ی نتایج</div>
+            </div>
+            <div id="main">
+                <div class="row" id="fr">مشخصات پرواز انتخابی شما</div>
+                <div class="row" id="flight-info">
+                    <div class="col-md-3 col-xs-3">
+                        <div id="finfo-side-1">کلاس اقتصادی&emsp;<i class="fa fa-suitcase"></i></div>
+                        <div id="finfo-side-2">MD83&nbsp;بوئینگ&emsp;<i class="fa fa-plane"></i></div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div id="dep-arr">تهران ۱۷:۴۰&emsp;<i class="fa fa-angle-double-left"></i>&emsp;مشهد ۱۸:۵۰</div>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <div id="finfo-side-1">ایران ایر ۱۷۴۰</div>
+                        <div id="finfo-side-2">دوشنبه ۱۷ اسفند <i class="fa fa-calendar-o"></i></div>
+                    </div>
+                </div>
+                <div class="row" id="fr">صورتحساب سفر</div>
+                <div class="row" id="flight-info">
+                    <div class="row" id="row1">
+                        <div class="col-md-3 col-xs-3">مجموع</div>
+                        <div class="col-md-2 col-xs-2">تعداد</div>
+                        <div class="col-md-3 col-xs-3">به ازای هر نفر</div>
+                        <div class="col-md-4 col-xs-4 last"></div>
+                    </div>
+                    <div class="row" id="row2">
+                        <div class="col-md-3 col-xs-3">۲،۷۰۰،۰۰۰ ریال</div>
+                        <div class="col-md-2 col-xs-2">۲ نفر</div>
+                        <div class="col-md-3 col-xs-3">۱،۳۵۰،۰۰۰ ریال</div>
+                        <div class="col-md-4 col-xs-4 last">بزرگسال</div>
+                    </div>
+                    <div class="row" id="row3">
+                        <div class="col-md-3 col-xs-3">۲،۷۰۰،۰۰۰ ریال</div>
+                        <div class="col-md-2 col-xs-2">۵ نفر</div>
+                        <div class="col-md-3 col-xs-3">۱،۳۵۰،۰۰۰ ریال</div>
+                        <div class="col-md-4 col-xs-4 last">کودک زیر ۱۲ سال</div>
+                    </div>
+                    <div class="row" id="row4">
+                        <div class="col-md-3 col-xs-3">۲،۷۰۰،۰۰۰ ریال</div>
+                        <div class="col-md-2 col-xs-2">۳ نفر</div>
+                        <div class="col-md-3 col-xs-3">۱،۳۵۰،۰۰۰ ریال</div>
+                        <div class="col-md-4 col-xs-4 last">نوزاد زیر ۲ سال</div>
+                    </div>
+                    <div class="row" id="row5">
+                        <div class="col-md-6 col-xs-6" id="majmu-l">۷،۷۰۷،۰۰۰ ریال</div>
+                        <div class="col-md-6 col-xs-6" id="majmu-r">مجموع</div>
+                    </div>
+                </div>
+<!--گرفتن اطلاعات-->
+                <div class="row" id="fr">اطلاعات</div>
+                <form action="/action_page.php">
+                <div class=row id="people-info">
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="id1" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname1" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname1" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;
+                            ۱-بزرگسال:
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id2" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname2" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname2" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۲-بزرگسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id3" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname3" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname3" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۳-خردسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id4" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname4" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname4" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۴-خردسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id5" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname5" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname5" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۵-خردسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id6" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname6" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname6" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۶-خردسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id7" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname7" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname7" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۷-خردسال
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id8" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname8" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname8" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۸-نوزاد
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id9" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname9" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname9" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۹-نوزاد
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="col-md-3 col-xs-3 sotun-sefid">
+                            <input type="text" name="id10" value="شماره ی ملی">
+                        </div>
+                        <div class="col-md-3 col-xs-3 sotun-sefid"><input type="text" name="lname10" value="نام خانوادگی (انگلیسی)">
+                        </div>
+                        <div class="col-md-2 col-xs-2 sotun-sefid">
+                            <input type="text" name="sname10" value="نام (انگلیسی)">
+                        </div>
+                        <div class="col-md-1 col-xs-1 gender">
+                            <select>
+                                <option value="man">آقای</option>
+                                <option value="wom">خانم</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-xs-3 age">
+                            <i class="fa fa-male"></i>&emsp;۱۰-نوزاد
+                        </div>
+                    </div>
+                </div>
+                    <div class="row" id="buttons">
+                        <div class="col-md-4 col-xs-4" id="finalize">
+                            <button type="button" id="fin">پرداخت و ثبت نهایی &gt;</button>
+                        </div>
+                        <div class="col-md-2 col-xs-2">
+                            <button type="button" id="cancel">انصراف</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <fotter>
+            <p>&lt;محمد بابامحمودی، غزال مشکاتی&gt; | دانشکده ی فنی دانشگاه تهران ، بهار ۹۶</p>
+        </fotter>
+    </body>
+</html>

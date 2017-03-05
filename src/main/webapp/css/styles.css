@@ -1,0 +1,349 @@
+@font-face {
+    font-family: vazir;
+    src: url(assets/Vazir-Light-FD.woff);
+}
+body {
+	
+	font-family: vazir;
+    font-size: 20px;
+	background-color : #7477b6;
+	background-image: url("assets/Background.png");
+	background-repeat: no-repeat;
+	background-position: 0% -20%;
+	background-size: 65% ;
+}
+div {
+    display: block;
+}
+#header{
+    height: 56px;
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    /*border-bottom: 2px solid white;*/
+    background: #7477b6 /* #0d85c1*/;
+    /*box-shadow: 0px 2px 8px rgba(0,0,0,.05);*/
+
+}
+#header-container{
+    height: 100%;
+    border-bottom: 1px solid white;
+}
+#logo{
+    padding-top: 2px;
+    float: right;
+    display: block;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #428bca;
+    outline: 0 !important;
+    box-sizing: border-box;
+}
+#header img{
+    float: left;
+}
+.img_logo{
+    width: 50px;
+}
+img{
+    border: 0;
+    margin-right: 25px;
+    margin-left: 25px;
+    vertical-align: middle;
+    outline: 0 !important;
+    box-sizing: border-box;
+}
+#login {
+    width: 145px;
+    margin-left: 25px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    /*background: #005782 !*#005782*!;*/
+    height: 56px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+}
+#login .label{
+    font-size: 15px;
+    /* width: 73px; */
+    margin: 0px 0px 3px 14px;
+    position: relative;
+    /*top: -23px;*/
+    padding: 0;
+}
+span{
+
+    display: inline-block;
+    color: #fcf8e3;
+    line-height: 46px;
+}
+.label{
+    font-weight: bold;
+    /*line-height: 1;*/
+    /*color: #fff;*/
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+#akbarLabel {
+    margin-right: 10px;
+}
+#loginLabel{
+    margin-left: 10px;
+
+}
+#slider{
+    width: 100%;
+    /*background: linear-gradient(to bottom, #0a84c1 0%,#4197bf 100%);*/
+    padding-top: 18px;
+}
+.container-fluid{
+    /*width: 100%;*/
+    outline: 0 !important;
+    box-sizing: border-box;
+    /*width: 1000px;*/
+    /*margin: 0px auto;*/
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+    min-height: 0;
+    outline: 0 !important;
+    /*box-sizing: border-box;*/
+}
+#slider-container {
+	position: relative;
+    width: 70%;
+    margin: 50px auto;
+    min-height: 0;
+    box-sizing: border-box;
+}
+#search {
+    font-size: 10pt;
+    width: 40%;
+    margin: 30px;
+    display: inline-block;
+    outline: 0 !important;
+    box-sizing: border-box;
+}
+#tab-bar{
+    outline: 0 !important;
+    box-sizing: border-box;
+
+}
+.tab{
+    float: right;
+    padding: 10px 20px 12px 10px;
+    margin-left: 0px;
+
+    /*border: 1px solid white;*/
+    background: rgb(60,63,104);
+    opacity: 0.9;
+    color: white;
+    box-shadow: 0px -2px 2px rgba(0,0,0,.02) inset;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13pt;
+    user-select: none;
+    width: 50%;
+    background-position: 79px 12px;
+    text-align: center;
+    position: relative;
+
+    /*background-position: 79px 12px;*/
+    text-align: center;
+    position: relative;
+
+    outline: 0 !important;
+}
+
+#tab-bar > a:focus {
+    background-color:white;
+}
+.clear{
+
+    clear: both;
+}
+.tab-selected {
+    background-color: #f9f9f9;
+    opacity: 1;
+    box-shadow: none;
+}
+#tab-oneWay{
+    border-radius: 0px 7px 7px 0px;
+    border-right: solid white 1px;
+    border-top: solid white 1px;
+    border-left: none;
+    border-bottom: solid white 1px;
+
+    color: white;
+
+}
+
+
+#tab-twoWay {
+    border-radius: 7px 0px 0px 7px;
+    border-left: solid white 1px;
+    border-top: solid white 1px;
+    border-right: none;
+    border-bottom: solid white 1px;
+}
+#search-panel{
+    background: rgb(60,63,104);
+    border-radius: 7px 7px 7px 7px;
+    margin-top: 25px;
+    padding: 10px 0px 0px 0px;
+    /*padding-bottom: 10px;*/
+    margin-bottom: 64px;
+
+    position: relative;
+    outline: 0 !important;
+    box-sizing: border-box;
+}
+.searchForm{
+    /*margin-top: 25px;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0 !important;
+    margin-top: 20px;
+
+
+}
+form{
+    display: block;
+    margin-top: 0em;
+    font-size: 14pt;
+
+}
+/*#form-TwoWay{*/
+    /*display: none;*/
+/*}*/
+/*#form-oneWay{*/
+    /*display: none;*/
+/*}*/
+
+:target{
+    display: none;
+}
+
+.formLabel{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+label{
+    color: white;
+    /*margin-top: 10px;*/
+}
+.singleLineInput{
+    float : left;
+    width: 60%;
+    margin-left: 20px;
+
+
+}
+/*.dropdown{*/
+    /*border-radius: 5px 5px 5px 5px;*/
+    /*font-size: 12pt;*/
+    /*font-family: vazir;*/
+    /*height: 30px;*/
+/*}*/
+
+ .row{
+    margin-top: 10px;
+    margin: 19px 0;
+}
+.inputStyle{
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12pt;
+    font-family: vazir;
+    height: 35px;
+}
+.PeopleNumber{
+    width: 30%;
+    margin: auto;
+    margin-top: 15px ;
+    /*padding: 0px 5px 0px 5px;*/
+    display: inline-block;
+    /*margin: auto;*/
+    font-size: 8pt;
+
+}
+.PeopleNumber label{
+    /*margin:auto ;*/
+    display: block;
+    text-align: center;
+    /*float: left;*/
+    /*-webkit-align-content: center;*/
+    margin-bottom: 10px;
+}
+.PeopleNumber i{
+    margin-right:15px ;
+    font-size: 16pt;
+    color: white;
+
+    /*margin: auto;*/
+}
+.infant{
+    font-size: 10pt;
+}
+.multipleLineInput{
+    /*float : left;*/
+    width: 50%;
+    /*margin-rifh: 20px;*/
+}
+.search-button{
+    /*dsiplay : block;*/
+    /*margin: auto;*/
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 7px 7px;
+    background-color: rgb(235,148,134);
+
+}
+.searchButtonstyle{
+    padding :5px 0px;
+    display: block;
+    font-size: 16pt;
+    text-align: center;
+    font-family: vazir;
+    color: white;
+}
+.footer
+{
+    direction:RTL;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom:0px;
+    background-color: #7477b6;
+    text-align: center;
+    opacity: 1;
+    background-color: rgba(0,0,0,0);
+    font-size: 15pt;
+    font-family:vazir;
+    color: white;
+}
+#akbar{
+    width: 50%;
+    float : left;
+    color:white;
+    font-family: vazir;
+    font-size: 30pt;
+}
+#lastline{
+    margin-right: 40px;
+}
+#lastline2{
+    margin-right: 100px;
+}
